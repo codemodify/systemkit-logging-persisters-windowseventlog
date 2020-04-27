@@ -21,7 +21,7 @@ type windowsEventlogLogger struct {
 }
 
 // NewWindowsEventLogger -
-func NewWindowsEventLogger() logging.Logger {
+func NewWindowsEventLogger() logging.CoreLogger {
 	binaryName := filepath.Base(os.Args[0])
 	emergencyLogger := debug.New(binaryName)
 
